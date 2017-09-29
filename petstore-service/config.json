@@ -5,7 +5,7 @@
     "statusCode": 501
   },
   "port": "80",
-  "name": "Job Management API",
+  "name": "Pet Store",
   "protocol": "http",
   "stubs": [
     {
