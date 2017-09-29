@@ -1,0 +1,67 @@
+{
+  "defaultResponse": {
+    "headers": {},
+    "body": "Mock not found",
+    "statusCode": 501
+  },
+  "port": "80",
+  "name": "Job Management API",
+  "protocol": "http",
+  "stubs": [
+    {
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": {
+              "name": "Lucky",
+              "type": "Dog",
+              "breed": "mixed"
+            }
+          }
+        }
+      ],
+      "predicates": [
+        {
+          "equals": {
+            "path": "/v1/pets/lucky",
+            "method": "GET"
+          }
+        }
+      ]
+    },
+    {
+      "responses": [
+        {
+          "is": {
+            "statusCode": 201,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": {
+              "name": "Max",
+              "type": "Dog",
+              "breed": "labrador"
+            }
+          }
+        }
+      ],
+      "predicates": [
+        {
+          "and": [
+            {
+              "equals": {
+                "method": "POST",
+                "path": "/v1/pets"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
