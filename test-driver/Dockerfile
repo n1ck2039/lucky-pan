@@ -23,5 +23,5 @@ EXPOSE 80
 EXPOSE 2525
 EXPOSE 3000
 ADD python_tests.py .
-CMD python3 python_tests.py
+CMD python3 python_tests.py > output.txt
             
