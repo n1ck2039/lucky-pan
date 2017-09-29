@@ -23,4 +23,4 @@ EXPOSE 80
 EXPOSE 2525
 EXPOSE 3000
 
-RUN python3 -h
+RUN pythonkljlk3 -h
