@@ -1,9 +1,5 @@
-# Owned by Veritas Ltd.
-# Creted as part of MCDMP-RAILS project
-# maintainer DL-VTAS-Eagle@veritas.com
-
 FROM centos:centos7
-MAINTAINER MCDMP Eagle Team <DL-VTAS-Eagle@veritas.com>
+MAINTAINER nicholas_inns@hotmail.com
 
 RUN yum -y update
 RUN yum -y install epel-release
